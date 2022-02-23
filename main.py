@@ -33,5 +33,14 @@ def add():
     return {"err": "already exist.."}, 404
 
 
+@app.route("/devices/<id>", methods=['GET'])
+def device(id):
+    device = Device.objects(deviceId=id).first()
+    if not device:
+        return jsonify({'err': 'doesnt exist'})
+
+    return jsonify(device.to_json())
+
+
 if __name__ == '__main__':
     app.run()
