@@ -59,5 +59,17 @@ def updateDevice(id):
     return {"msg": "updated successfully!"}, 200
 
 
+@app.route("/devices/<id>", methods=['DELETE'])
+def deleteDevice(id):
+    device = Device.objects(deviceId=id).first()
+
+    if not device:
+        return {"err": "doesn't exist"}, 404
+
+    device.update(deleted='True')
+
+    return {"msg": "deleted successfully!"}, 200
+
+
 if __name__ == '__main__':
     app.run()
