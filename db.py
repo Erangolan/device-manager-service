@@ -9,11 +9,9 @@ load_dotenv(dotenv_path=dotenv_path)
 app = Flask(__name__)
 
 app.config['MONGODB_SETTINGS'] = {
-    'db': os.getenv('DB_NAME'),
     'host': os.getenv('DB_HOST'),
     'username': os.getenv('DB_USER'),
     'password': os.getenv('DB_PASS'),
-    'port': 5000
 }
 db = MongoEngine()
 db.init_app(app)
