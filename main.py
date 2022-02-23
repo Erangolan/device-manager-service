@@ -42,5 +42,22 @@ def device(id):
     return jsonify(device.to_json())
 
 
+@app.route("/devices/<id>", methods=['PATCH'])
+def updateDevice(id):
+    updatedDev = json.loads(request.data)
+    device = Device.objects(deviceId=id).first()
+
+    if not device:
+        return {"err": "doesn't exist"}, 404
+
+    device.update(
+        airplane_id=updatedDev.get('airplane_id') if not None else device['airplane_id'],
+        serial_number=updatedDev.get('serial_number') if not None else device['serial_number'],
+        description=updatedDev.get('description') if not None else device['description']
+    )
+
+    return {"msg": "updated successfully!"}, 200
+
+
 if __name__ == '__main__':
     app.run()
