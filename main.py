@@ -51,9 +51,9 @@ def updateDevice(id):
         return {"err": "doesn't exist"}, 404
 
     device.update(
-        airplane_id=updatedDev.get('airplane_id') if not None else device['airplane_id'],
-        serial_number=updatedDev.get('serial_number') if not None else device['serial_number'],
-        description=updatedDev.get('description') if not None else device['description']
+        airplane_id=device['airplane_id'] if updatedDev.get('airplane_id') is None else updatedDev.get('airplane_id'),
+        serial_number=device['serial_number'] if updatedDev.get('serial_number') is None else updatedDev.get('serial_number'),
+        description=device['description'] if updatedDev.get('description') is None else updatedDev.get('description')
     )
 
     return {"msg": "updated successfully!"}, 200
