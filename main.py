@@ -8,8 +8,8 @@ def devices():
     validDevices = []
     devices = Device.objects()
     for device in devices:
-        if device['deleted'] == "False":
-            validDevices.append(device)
+        if device.to_json() is not None:
+            validDevices.append(device.to_json())
 
     return make_response(jsonify(validDevices), 200)
 
@@ -26,8 +26,8 @@ def add():
             airplane_id=record['airplane_id'],
             serial_number=record['serial_number'],
             description=record['description'],
-            deleted=record['deleted']
         )
+
         device.save()
         return {"msg": "added successfully to db!"}, 200
     return {"err": "already exist.."}, 404
@@ -36,7 +36,7 @@ def add():
 @app.route("/devices/<id>", methods=['GET'])
 def device(id):
     device = Device.objects(deviceId=id).first()
-    if not device:
+    if not device or device.to_json() is None:
         return jsonify({'err': 'doesnt exist'})
 
     return jsonify(device.to_json())
@@ -47,7 +47,7 @@ def updateDevice(id):
     updatedDev = json.loads(request.data)
     device = Device.objects(deviceId=id).first()
 
-    if not device:
+    if not device or device.to_json() is None:
         return {"err": "doesn't exist"}, 404
 
     device.update(
@@ -66,8 +66,7 @@ def deleteDevice(id):
     if not device:
         return {"err": "doesn't exist"}, 404
 
-    device.update(deleted='True')
-
+    device.update(deleted=True)
     return {"msg": "deleted successfully!"}, 200
 
 
