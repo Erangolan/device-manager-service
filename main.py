@@ -1,5 +1,6 @@
 from flask import jsonify, make_response, request
-from db import Device, app
+from db import app
+from Device import Device
 import json
 
 

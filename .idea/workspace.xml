@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eb0e3837-6b93-456c-8966-f09e16351f40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../flask_web" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="device-manager-service" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -54,9 +55,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yaml.myreader: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="myreader" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Docker.docker-compose.yaml.myreader: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -78,55 +93,67 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="730" y="-757" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1646121038134">
+      <screen x="3" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="730" y="-757" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646121038134" />
     <state x="560" y="-945" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1646045499957">
       <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646000456118" />
     <state x="560" y="-945" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646045499957" />
+    <state x="682" y="-839" key="#docker-compose.yaml.myreader:_Compose_Deployment" timestamp="1646076428962">
+      <screen x="3" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="682" y="-839" key="#docker-compose.yaml.myreader:_Compose_Deployment/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646076428962" />
     <state x="743" y="-805" key="FileChooserDialogImpl" timestamp="1645991015419">
       <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state x="743" y="-805" key="FileChooserDialogImpl/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1645991015419" />
-    <state width="1899" height="219" key="GridCell.Tab.0.bottom" timestamp="1646056653321">
+    <state width="1899" height="218" key="GridCell.Tab.0.bottom" timestamp="1646121984543">
       <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="149" key="GridCell.Tab.0.bottom/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646055453870" />
-    <state width="1899" height="219" key="GridCell.Tab.0.bottom/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646056653321" />
-    <state width="1899" height="219" key="GridCell.Tab.0.center" timestamp="1646056653321">
+    <state width="1899" height="218" key="GridCell.Tab.0.bottom/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646121984543" />
+    <state width="1899" height="218" key="GridCell.Tab.0.center" timestamp="1646121984542">
       <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="149" key="GridCell.Tab.0.center/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646055453870" />
-    <state width="1899" height="219" key="GridCell.Tab.0.center/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646056653321" />
-    <state width="1899" height="219" key="GridCell.Tab.0.left" timestamp="1646056653321">
+    <state width="1899" height="218" key="GridCell.Tab.0.center/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646121984542" />
+    <state width="1899" height="218" key="GridCell.Tab.0.left" timestamp="1646121984542">
       <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="149" key="GridCell.Tab.0.left/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646055453869" />
-    <state width="1899" height="219" key="GridCell.Tab.0.left/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646056653321" />
-    <state width="1899" height="219" key="GridCell.Tab.0.right" timestamp="1646056653321">
+    <state width="1899" height="218" key="GridCell.Tab.0.left/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646121984542" />
+    <state width="1899" height="218" key="GridCell.Tab.0.right" timestamp="1646121984543">
       <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="149" key="GridCell.Tab.0.right/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646055453870" />
-    <state width="1899" height="219" key="GridCell.Tab.0.right/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646056653321" />
-    <state width="1259" height="159" key="GridCell.Tab.1.bottom" timestamp="1646039277745">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="218" key="GridCell.Tab.0.right/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646121984543" />
+    <state width="1899" height="274" key="GridCell.Tab.1.bottom" timestamp="1646083611574">
+      <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="159" key="GridCell.Tab.1.bottom/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646039277745" />
-    <state width="1259" height="159" key="GridCell.Tab.1.center" timestamp="1646039277745">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="274" key="GridCell.Tab.1.bottom/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646083611574" />
+    <state width="1899" height="274" key="GridCell.Tab.1.center" timestamp="1646083611574">
+      <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="159" key="GridCell.Tab.1.center/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646039277745" />
-    <state width="1259" height="159" key="GridCell.Tab.1.left" timestamp="1646039277745">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="274" key="GridCell.Tab.1.center/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646083611574" />
+    <state width="1899" height="274" key="GridCell.Tab.1.left" timestamp="1646083611574">
+      <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="159" key="GridCell.Tab.1.left/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646039277745" />
-    <state width="1259" height="159" key="GridCell.Tab.1.right" timestamp="1646039277745">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="274" key="GridCell.Tab.1.left/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646083611574" />
+    <state width="1899" height="274" key="GridCell.Tab.1.right" timestamp="1646083611574">
+      <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state width="1259" height="159" key="GridCell.Tab.1.right/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646039277745" />
-    <state x="437" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1646034757647">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="274" key="GridCell.Tab.1.right/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646083611574" />
+    <state x="659" y="-736" key="com.intellij.ide.util.TipDialog" timestamp="1646119933138">
+      <screen x="3" y="-1080" width="1920" height="1040" />
     </state>
     <state x="437" y="225" key="com.intellij.ide.util.TipDialog/0.0.1280.680/3.-1080.1920.1040@0.0.1280.680" timestamp="1646034757647" />
-    <state x="659" y="-736" key="com.intellij.ide.util.TipDialog/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1645990884950" />
+    <state x="659" y="-736" key="com.intellij.ide.util.TipDialog/0.0.1280.680/3.-1080.1920.1040@3.-1080.1920.1040" timestamp="1646119933138" />
   </component>
 </project>
